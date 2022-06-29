@@ -20,6 +20,7 @@
 
 .nav__menu {
   display: flex;
+  align-items: center;
   gap: 90px;
 }
 
@@ -100,7 +101,7 @@
     width: 100%;
     top: 80px;
     right: 0;
-    background: #fbfbfb;
+    background: var(--bg-body);
     height: 0;
     z-index: 1000;
     transition: 0.6s;

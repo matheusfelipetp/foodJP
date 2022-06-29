@@ -118,7 +118,7 @@
 
 @media (max-width: 920px) {
   .food {
-    padding: 60px 0;
+    padding: 40px 0;
   }
   .food h1 {
     font-size: 2rem;
@@ -127,7 +127,7 @@
 
 @media (max-width: 760px) {
   .food {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
   .food h1 {
     margin-bottom: 40px;

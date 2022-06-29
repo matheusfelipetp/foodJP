@@ -59,7 +59,7 @@
 @media (max-width: 650px) {
   .main {
     grid-template-columns: 1fr;
-    padding: 40px 0;
+    padding: 20px 0;
   }
   .main__img img {
     display: none;
