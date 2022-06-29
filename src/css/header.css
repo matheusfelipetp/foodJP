@@ -1,0 +1,165 @@
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.header {
+  padding: 32px 0;
+}
+
+.nav__logo a {
+  font: 700 2.5rem/0.8 "Montserrat";
+  color: var(--text);
+}
+
+.logo__span {
+  color: var(--primary);
+}
+
+.nav__menu {
+  display: flex;
+  gap: 90px;
+}
+
+.nav__menu a {
+  font: 500 1.25rem "Inter";
+  color: var(--text);
+  transition: 0.3s ease;
+  display: block;
+  padding: 0.5rem;
+}
+
+.nav__menu li:nth-child(4) {
+  display: none;
+}
+
+.nav__menu a:hover {
+  color: var(--text-2);
+}
+
+.nav__menu a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--primary);
+  display: block;
+  margin-top: 4px;
+  transition: 0.3s ease;
+}
+
+.nav__menu a:hover::after {
+  width: 70%;
+}
+
+.nav__button {
+  background: transparent;
+  color: var(--text);
+  font: 500 1.25rem "Inter";
+  padding: 10px 60px;
+  border-radius: 10px;
+  border: 1px solid var(--text);
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.nav__button:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .nav__menu {
+    gap: 60px;
+  }
+  .nav__menu a {
+    font-size: 1rem;
+  }
+  .nav__button {
+    font-size: 1rem;
+    padding: 10px 60px;
+  }
+}
+
+@media (max-width: 760px) {
+  .nav__button {
+    display: none;
+  }
+  .nav__menu li:nth-child(4) {
+    display: block;
+  }
+  .nav__menu {
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 80px;
+    right: 0;
+    background: #fbfbfb;
+    height: 0;
+    z-index: 1000;
+    transition: 0.6s;
+    visibility: hidden;
+    overflow: hidden;
+  }
+  .nav__menu a {
+    color: var(--text);
+    padding: 1rem 0;
+    margin: 0 22px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+  }
+  #nav-mobile.active .nav__menu {
+    height: 100vh;
+    visibility: visible;
+    overflow: auto;
+  }
+  .nav__menu a:hover {
+    color: var(--primary);
+  }
+  .nav__menu a::after {
+    margin-top: 0;
+  }
+  .nav__menu a:hover::after {
+    width: 0;
+  }
+  #btn-mobile {
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
+  #menu-hamburguer {
+    width: 30px;
+    border-top: 2px solid;
+    color: var(--primary);
+  }
+  #menu-hamburguer::after,
+  #menu-hamburguer::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+  #nav-mobile.active #menu-hamburguer {
+    border-top-color: transparent;
+  }
+  #nav-mobile.active #menu-hamburguer::before {
+    transform: rotate(135deg);
+  }
+  #nav-mobile.active #menu-hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+}

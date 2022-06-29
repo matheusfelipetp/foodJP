@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e ingredientes frescos.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@500;600;700&family=Poppins:wght@500&family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./src/css/reset.css">
+  <link rel="stylesheet" href="./src/css/style.css">
+  <link rel="shortcut icon" href="./favicon.svg" type="image/x-icon">
+
+  <script defer src="./js/script.js"></script>
+
+  <title>FoodJP</title>
+</head>
+
+<body>
+  <header class="header container">
+    <nav class="header__nav">
+      <h1 class="nav__logo"><a href="./index.html">Food<span class="logo__span">JP</span></a></h1>
+      <nav id="nav-mobile">
+        <ul class="nav__menu" role="menu">
+          <li><a href="./index.html">Início</a></li>
+          <li><a href="#">Cardápio</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Entrar</a></li>
+        </ul>
+
+        <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-controls="nav__menu" aria-expanded="false">
+          <span id="menu-hamburguer"></span>
+        </button>
+      </nav>
+      <a href="#" class="nav__button">Entrar</a>
+    </nav>
+  </header>
+
+  <main class="main container">
+    <div class="main__content">
+      <h1>Comida Oriental</h1>
+      <p>A culinária Japonesa é bastante equilibrada, sendo muito rica em peixes (ômega 3), vegetais, massas e ingredientes frescos.</p>
+      <a href="#" class="main__button">Cardápio</a>
+    </div>
+
+    <figure class="main__img">
+      <img src="./src/img/intro.png" alt="Comida Japonesa">
+    </figure>
+  </main>
+
+  <article class="preparation container">
+    <figure class="preparation__img">
+      <img src="./src/img/prato.jpg" alt="Pessoa segurando um prato de comida japonesa">
+    </figure>
+
+    <div class="preparation__content">
+      <h1>Feita de forma Tradicional</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      <a href="#">Ler mais sobre o modo de preparo </a>
+    </div>
+  </article>
+
+  <article class="food container">
+    <h1>Mais populares</h1>
+    <div class="food__content">
+      <div class="food__box">
+        <figure class="box__img">
+          <img src="./src/img/img.png" alt="Ramen de Frango">
+        </figure>
+        <h2>Ramen de Frango</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span>R$ 25</span>
+      </div>
+
+      <div class="food__box">
+        <figure class="box__img">
+          <img src="./src/img/img (1).png" alt="Ramen Apimentado">
+        </figure>
+        <h2>Ramen Apimentado</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span>R$ 30</span>
+      </div>
+
+      <div class="food__box">
+        <figure class="box__img">
+          <img src="./src/img/img (2).png" alt="Ramen Tradicional">
+        </figure>
+        <h2>Ramen Tradicional</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <span>R$ 22</span>
+      </div>
+    </div>
+  </article>
+
+  <article class="rating container">
+    <h1>Comentários</h1>
+    <div class="rating__content">
+      <div class="rating__box">
+        <img class="box__profile" src="./src/img/img profile 1.png" alt="Foto de uma mulher">
+        <h2>Daniele Almeida</h2>
+        <p>Ótimo serviço! Encantada com a qualidade dos pratos.</p>
+        <div class="img-rating">
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+        </div>
+      </div>
+
+      <div class="rating__box">
+        <img class="box__profile" src="./src/img/img profile 2.png" alt="Foto de um homem">
+        <h2>Ricardo França</h2>
+        <p>Não é apenas a comida excelente, o serviço torna a experiência especial.</p>
+        <div class="img-rating">
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+          <svg width="19" height="17" viewbox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.24021 5.92745L9.51726 2.4421L10.7943 5.92745C11.1096 6.78802 11.9287 7.36021 12.8452 7.36021H16.5076L13.7417 9.45358C13.011 10.0065 12.7032 10.9567 12.9708 11.8331L14.0158 15.2556L10.6975 13.1247C9.97842 12.6629 9.0561 12.6629 8.33702 13.1247L5.01868 15.2556L6.06371 11.8331C6.33129 10.9567 6.02347 10.0065 5.29286 9.45358L2.52695 7.36021H6.18933C7.10585 7.36021 7.9249 6.78802 8.24021 5.92745ZM14.4381 15.5268L14.4379 15.5266L14.4381 15.5268Z" fill="#DA2535" stroke="#DA2535" stroke-width="2.36842" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </article>
+
+  <article class="location container">
+    <h1>Localização</h1>
+    <div class="location__content">
+      <a href="https://www.google.com.br/maps/place/Rio+de+Janeiro,+RJ/@-22.9140693,-43.5860659,11z/data=!3m1!4b1!4m5!3m4!1s0x9bde559108a05b:0x50dc426c672fd24e!8m2!3d-22.9068467!4d-43.1728965" target="_blank">
+        <img class="img-map" src="./src/img/mapa rio.jpg" alt="Mapa do Rio de Janeiro">
+      </a>
+      <form action="#">
+        <img src="./src/img/icons/fi_map-pin.svg" alt="Localização">
+        <input type="search" name="search" id="search" placeholder="Localização para entrega">
+        <button>
+          <img src="./src/img/icons/search.svg" alt="Lupa">
+          <span>Buscar</span>
+        </button>
+      </form>
+    </div>
+  </article>
+
+  <footer class="footer container">
+    <h1 class="nav__logo"><a href="./index.html">Food<span class="logo__span">JP</span></a></h1>
+
+    <ul class="footer__list">
+      <h2>Contato</h2>
+      <li><a href="tel:+5521999999999" target="_blank">+55 21 9999-9999</a></li>
+      <li><a href="mailto: matheusfelipetp@outlook.com" target="_blank">email@gmail.com</a></li>
+    </ul>
+
+    <ul class="footer__list">
+      <h2>Sobre nós</h2>
+      <li><a href="#">Menu</a></li>
+      <li><a href="#">Valores</a></li>
+      <li><a href="#">Pagina principal</a></li>
+    </ul>
+
+    <ul class="footer__list">
+      <h2>Serviços</h2>
+      <li><a href="#">Entrega</a></li>
+      <li><a href="#">Retirada</a></li>
+    </ul>
+  </footer>
+</body>
+
+</html>

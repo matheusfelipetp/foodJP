@@ -1,0 +1,27 @@
+:root {
+  --primary: #da2535;
+  --text: #292929;
+  --text-2: #616161;
+}
+
+img {
+  border-radius: 16px;
+}
+
+body {
+  background: #fbfbfb;
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+figcaption {
+  display: none;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+}
